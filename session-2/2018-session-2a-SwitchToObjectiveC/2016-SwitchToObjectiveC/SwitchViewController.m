@@ -20,12 +20,20 @@
     // Do any additional setup after loading the view.
     NSLog(@"The view did load");
   
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+//  // @"kSwitchPreference"
+//  if ([defaults ¬getBoolForKey:@"kSwitchPreference"]) == TRUE {
+//    self.switch.isEnabled = TRUE
+//  }
+  
 }
 
 
 // Toggle the values of the switch and store its values in `NSUserDefaults`.
 // Dump the user defaults to the console for debugging
 - (IBAction)tapSwitch:(UISwitch *)sender {
+  
   NSLog(@"Switch Value:%d", sender.isOn);
   
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

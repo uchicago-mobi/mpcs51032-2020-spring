@@ -10,6 +10,8 @@
 
 @interface SwitchViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISwitch *switch;
+
 - (IBAction)tapSwitch:(UISwitch *)sender;
 
 @end
