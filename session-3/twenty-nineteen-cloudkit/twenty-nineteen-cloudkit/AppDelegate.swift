@@ -91,12 +91,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
   /// This is only for debugging. It will present a local notification to the
   /// device because a normal APNS is a silent notification.
   func local_notification_from_silent(message: String, recordId: String) {
-    print("Creating local notification")
-    
     // Create notification content
     let content = UNMutableNotificationContent()
-    content.title = "😂 Joke of the Day"
-    content.subtitle = "Record ID: \(recordId)"
+    content.title = "😂 Joke Record ID: \(recordId)"
+    content.subtitle = "This would be a good place to sync your local data."
     content.body = message
     content.sound = UNNotificationSound.default
     
