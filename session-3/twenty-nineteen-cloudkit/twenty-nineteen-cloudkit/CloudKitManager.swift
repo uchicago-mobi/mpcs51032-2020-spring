@@ -20,11 +20,12 @@ open class CloudKitManager {
   let container: CKContainer = CKContainer.default()
   let publicDB: CKDatabase = CKContainer.default().publicCloudDatabase
   let privateDB: CKDatabase = CKContainer.default().privateCloudDatabase
+
+  /// Specific a "currentDB" so it easy to switch between them (for demonstration purposes)
   let currentDB: CKDatabase = CKContainer.default().publicCloudDatabase
   
-  /// Current user
+  /// Current user's iCloud Record; the id will be stored in here
   var userRecordID: CKRecord.ID?
-  
   
   //
   // MARK: - Singleton

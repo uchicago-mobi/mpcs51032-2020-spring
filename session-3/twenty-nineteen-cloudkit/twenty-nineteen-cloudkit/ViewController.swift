@@ -40,6 +40,7 @@ class ViewController: UIViewController {
   
   /// Retrieve all the jokes
   @IBAction func tapQueryAll(_ sender: UIButton) {
+    // Alternative way of using CloudKit API (commented out since we are using the one below)
     //CloudKitManager.sharedInstance.getJokes()
     
     let predicate = NSPredicate(value: true)
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
     CloudKitManager.sharedInstance.getJokesWithOperation(query: query, cursor: nil)
   }
   
-  
+  /// Retrieve all the jokes by a spefic user
   @IBAction func tapQueryUser(_ sender: UIButton) {
     if let userRecordID = self.userRecordID {
       CloudKitManager.sharedInstance.getJokesByCurrentUser(userRecordID)
