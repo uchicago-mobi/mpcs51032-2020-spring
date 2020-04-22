@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="twenty_nineteen_cloudkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AaN-Bd-Gq5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="F8B-vj-bHx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCloud Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9js-Za-5RL">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-8C-6R9">
+                                                <rect key="frame" x="0.0" y="204.5" width="414" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Add a joke"/>
+                                                <connections>
+                                                    <action selector="tapAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZYZ-SB-9yW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7a2-Ax-YjS">
+                                                <rect key="frame" x="0.0" y="409" width="414" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="All Jokes (NSOperation)"/>
+                                                <connections>
+                                                    <action selector="tapQueryAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSN-vF-h14"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVk-fs-71u">
+                                                <rect key="frame" x="0.0" y="613.5" width="414" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="All Jokes (User Query)"/>
+                                                <connections>
+                                                    <action selector="tapQueryUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBw-yf-rm5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AaN-Bd-Gq5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KIc-yn-G61"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AaN-Bd-Gq5" secondAttribute="bottom" id="Xf2-gV-nqd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AaN-Bd-Gq5" secondAttribute="trailing" id="bJX-aF-MD2"/>
+                            <constraint firstItem="AaN-Bd-Gq5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rwP-3T-1W6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountLabel" destination="9js-Za-5RL" id="PfZ-Vz-b9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="126"/>
+        </scene>
+    </scenes>
+</document>

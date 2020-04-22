@@ -1,0 +1,13 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Gerard added something new - take a look",
+            "title": "Photos"
+        },
+        "category": "file_added",
+        "mutable-content": 1,
+        "badge" : 5
+    },
+    "image_url": "https://assets.website-files.com/5e1c6cdadb4d52399503394c/5e31fc43e7c7eca12dd4228d_5e1c6cdadb4d527592033a11_Hero%402x%20(1).png",
+    "event_type": "file_added"
+}
