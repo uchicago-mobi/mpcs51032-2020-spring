@@ -20,7 +20,7 @@ open class CloudKitManager {
   let container: CKContainer = CKContainer.default()
   let publicDB: CKDatabase = CKContainer.default().publicCloudDatabase
   let privateDB: CKDatabase = CKContainer.default().privateCloudDatabase
-
+  
   /// Specific a "currentDB" so it easy to switch between them (for demonstration purposes)
   let currentDB: CKDatabase = CKContainer.default().publicCloudDatabase
   
@@ -237,75 +237,19 @@ open class CloudKitManager {
   // 
   // MARK: - Subscriptions
   //
-//
-//  func registerJokeOfTheDaySubscriptions() {
-//    // Unique identifier for the subscription
-//    let uuid: UUID = UUID()
-//    let identifier = "\(uuid)-joke-of-the-day"
-//
-//    // Create the notification that will be delivered
-//    let notificationInfo = CKSubscription.NotificationInfo()
-//    notificationInfo.alertBody = "The Joke of the Day is here! 😂"
-//    notificationInfo.shouldBadge = true
-//    notificationInfo.shouldSendContentAvailable = true
-//    notificationInfo.desiredKeys = ["joke"]
-//
-//    // Create the subscription object
-//    let subscription = CKQuerySubscription(recordType: "joke_of_the_day",
-//                                           predicate: NSPredicate(value: true),
-//                                           subscriptionID: identifier,
-//                                           options: [
-//                                            CKQuerySubscription.Options.firesOnRecordCreation])
-//
-//    subscription.notificationInfo = notificationInfo
-//
-//    // Save subscription
-//    currentDB.save(subscription, completionHandler: ({returnRecord, error in
-//      if let err = error {
-//        print("JOTD: subscription failed \(err.localizedDescription)")
-//      } else {
-//        print("JOTD: subscription set up")
-//      }
-//    }))
-//  }
-//
-//
-//
-//  func registerSilentAlertSubscription() {
-//    let uuid: UUID = UUID()
-//    let identifier = "\(uuid)-alert"
-//
-//
-//    // Create the notification that will be delivered
-//    let notificationInfo = CKSubscription.NotificationInfo()
-//    notificationInfo.shouldSendContentAvailable = true
-//    notificationInfo.desiredKeys = ["message"]
-//
-//    // Create the subscription
-//    let subscription = CKQuerySubscription(recordType: "alert",
-//                                           predicate: NSPredicate(value: true),
-//                                           subscriptionID: identifier,
-//                                           options: [CKQuerySubscription.Options.firesOnRecordCreation])
-//
-//    subscription.notificationInfo = notificationInfo
-//    CKContainer.default().publicCloudDatabase.save(subscription,
-//                                                   completionHandler: ({returnRecord, error in
-//                                                    if let err = error {
-//                                                      print("ALERT: subscription failed \(err.localizedDescription)")
-//                                                    } else {
-//                                                      print("ALERT: subscription set up")
-//                                                    }
-//                                                   }))
-//  }
-  
-  
+
+  /// Register the joke subscription with CloudKit. We want to be notified on
+  /// any changes to a Joke record.
   func registerJokeSubscription() {
+    // Create a unique identifier for the subscription (required by CloudKit)
     let uuid: UUID = UUID()
     let identifier = "\(uuid)-joke"
     
     // Create the notification that will be delivered
     let notificationInfo = CKSubscription.NotificationInfo()
+    // Allows us to send a payload
     notificationInfo.shouldSendContentAvailable = true
+    // Request the data for specific keys of the `Joke` record
     notificationInfo.desiredKeys = ["question","response"]
     
     // Create the subscription
@@ -317,6 +261,8 @@ open class CloudKitManager {
                                                      CKQuerySubscription.Options.firesOnRecordDeletion])
     
     subscription.notificationInfo = notificationInfo
+    
+    // Save the subscription to CloudKit
     CKContainer.default().publicCloudDatabase.save(subscription,
                                                    completionHandler: ({returnRecord, error in
                                                     if let err = error {
