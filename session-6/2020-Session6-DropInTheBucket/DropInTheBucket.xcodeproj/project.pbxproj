@@ -21,7 +21,6 @@
 		37AB903F1AFA91520022C3F4 /* DropInTheBucketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB903E1AFA91520022C3F4 /* DropInTheBucketTests.swift */; };
 		37AB90491AFA923D0022C3F4 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB90481AFA923D0022C3F4 /* Ball.swift */; };
 		37AB904B1AFA92C80022C3F4 /* Tink.caf in Resources */ = {isa = PBXBuildFile; fileRef = 37AB904A1AFA92C80022C3F4 /* Tink.caf */; };
-		37AB904D1AFA9D2B0022C3F4 /* Spoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB904C1AFA9D2B0022C3F4 /* Spoon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,7 @@
 		37AB903E1AFA91520022C3F4 /* DropInTheBucketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInTheBucketTests.swift; sourceTree = "<group>"; };
 		37AB90481AFA923D0022C3F4 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 		37AB904A1AFA92C80022C3F4 /* Tink.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tink.caf; sourceTree = "<group>"; };
-		37AB904C1AFA9D2B0022C3F4 /* Spoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spoon.swift; sourceTree = "<group>"; };
+		972211BE246B7A5D00E6E522 /* PlaygroundProject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaygroundProject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +110,7 @@
 				37446F861CF36005008EA341 /* Resources */,
 				37AB90281AFA91520022C3F4 /* GameScene.swift */,
 				37AB902A1AFA91520022C3F4 /* GameViewController.swift */,
-				37AB904C1AFA9D2B0022C3F4 /* Spoon.swift */,
+				972211BE246B7A5D00E6E522 /* PlaygroundProject.playground */,
 				37AB902C1AFA91520022C3F4 /* Main.storyboard */,
 				37AB90481AFA923D0022C3F4 /* Ball.swift */,
 				37AB90311AFA91520022C3F4 /* LaunchScreen.xib */,
@@ -262,7 +261,6 @@
 				37AB90291AFA91520022C3F4 /* GameScene.swift in Sources */,
 				37AB902B1AFA91520022C3F4 /* GameViewController.swift in Sources */,
 				37AB90251AFA91520022C3F4 /* AppDelegate.swift in Sources */,
-				37AB904D1AFA9D2B0022C3F4 /* Spoon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

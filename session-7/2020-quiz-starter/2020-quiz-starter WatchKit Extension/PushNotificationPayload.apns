@@ -1,0 +1,28 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Today's subject. watchOS.",
+            "title": "Quiz Time!",
+            "subtitle": "watchOS"
+        },
+        "category": "myCategory",
+        "thread-id": "5280"
+    },
+
+    "WatchKit Simulator Actions": [
+        {
+            "title": "First Button",
+            "identifier": "correct"
+        },
+        {
+            "title": "Second Button",
+            "identifier": "incorrect"
+        }
+    ],
+
+    "card" : {
+        "question" : "6 × 7",
+        "answer" : "42",
+        "uuid" : "1234"
+    }
+}

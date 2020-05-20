@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97F6E08E24744B870078D0F4 /* 2020-quiz-starter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 97F6E08D24744B870078D0F4 /* 2020-quiz-starter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97F6E09424744B870078D0F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F6E09224744B870078D0F4 /* Interface.storyboard */; };
+		97F6E09624744B890078D0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F6E09524744B890078D0F4 /* Assets.xcassets */; };
+		97F6E09D24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97F6E09C24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97F6E0A424744B890078D0F4 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0A324744B890078D0F4 /* HostingController.swift */; };
+		97F6E0A624744B890078D0F4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0A524744B890078D0F4 /* ExtensionDelegate.swift */; };
+		97F6E0A824744B890078D0F4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0A724744B890078D0F4 /* NotificationController.swift */; };
+		97F6E0AA24744B890078D0F4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0A924744B890078D0F4 /* NotificationView.swift */; };
+		97F6E0AC24744B890078D0F4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0AB24744B890078D0F4 /* ComplicationController.swift */; };
+		97F6E0AE24744B8A0078D0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F6E0AD24744B8A0078D0F4 /* Assets.xcassets */; };
+		97F6E0B124744B8A0078D0F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F6E0B024744B8A0078D0F4 /* Preview Assets.xcassets */; };
+		97F6E0C324744C7C0078D0F4 /* FlashCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0C224744C7C0078D0F4 /* FlashCardModel.swift */; };
+		97F6E0D024744F5F0078D0F4 /* TopicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0C824744F5F0078D0F4 /* TopicList.swift */; };
+		97F6E0D224744F5F0078D0F4 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0CA24744F5F0078D0F4 /* CardList.swift */; };
+		97F6E0D424744F5F0078D0F4 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0CD24744F5F0078D0F4 /* FlipView.swift */; };
+		97F6E0D524744F5F0078D0F4 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0CE24744F5F0078D0F4 /* CardStack.swift */; };
+		97F6E0D624744F5F0078D0F4 /* CardSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0CF24744F5F0078D0F4 /* CardSide.swift */; };
+		97F6E0D8247452920078D0F4 /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6E0D7247452920078D0F4 /* FlashCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97F6E08F24744B870078D0F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97F6E08324744B860078D0F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97F6E08C24744B870078D0F4;
+			remoteInfo = "2020-quiz-starter WatchKit App";
+		};
+		97F6E09E24744B890078D0F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97F6E08324744B860078D0F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97F6E09B24744B890078D0F4;
+			remoteInfo = "2020-quiz-starter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97F6E0B924744B8A0078D0F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97F6E09D24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F6E0BD24744B8A0078D0F4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				97F6E08E24744B870078D0F4 /* 2020-quiz-starter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		97F6E08924744B860078D0F4 /* 2020-quiz-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2020-quiz-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F6E08D24744B870078D0F4 /* 2020-quiz-starter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2020-quiz-starter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F6E09324744B870078D0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		97F6E09524744B890078D0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97F6E09724744B890078D0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F6E09C24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "2020-quiz-starter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F6E0A324744B890078D0F4 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		97F6E0A524744B890078D0F4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		97F6E0A724744B890078D0F4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		97F6E0A924744B890078D0F4 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		97F6E0AB24744B890078D0F4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		97F6E0AD24744B8A0078D0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97F6E0B024744B8A0078D0F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97F6E0B224744B8A0078D0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F6E0B324744B8A0078D0F4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		97F6E0C224744C7C0078D0F4 /* FlashCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardModel.swift; sourceTree = "<group>"; };
+		97F6E0C824744F5F0078D0F4 /* TopicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicList.swift; sourceTree = "<group>"; };
+		97F6E0CA24744F5F0078D0F4 /* CardList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		97F6E0CD24744F5F0078D0F4 /* FlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		97F6E0CE24744F5F0078D0F4 /* CardStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		97F6E0CF24744F5F0078D0F4 /* CardSide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSide.swift; sourceTree = "<group>"; };
+		97F6E0D7247452920078D0F4 /* FlashCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97F6E09924744B890078D0F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97F6E08224744B860078D0F4 = {
+			isa = PBXGroup;
+			children = (
+				97F6E09124744B870078D0F4 /* 2020-quiz-starter WatchKit App */,
+				97F6E0A024744B890078D0F4 /* 2020-quiz-starter WatchKit Extension */,
+				97F6E08A24744B860078D0F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97F6E08A24744B860078D0F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E08924744B860078D0F4 /* 2020-quiz-starter.app */,
+				97F6E08D24744B870078D0F4 /* 2020-quiz-starter WatchKit App.app */,
+				97F6E09C24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97F6E09124744B870078D0F4 /* 2020-quiz-starter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E09224744B870078D0F4 /* Interface.storyboard */,
+				97F6E09524744B890078D0F4 /* Assets.xcassets */,
+				97F6E09724744B890078D0F4 /* Info.plist */,
+			);
+			path = "2020-quiz-starter WatchKit App";
+			sourceTree = "<group>";
+		};
+		97F6E0A024744B890078D0F4 /* 2020-quiz-starter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E0C124744C5D0078D0F4 /* Model */,
+				97F6E0C724744F5F0078D0F4 /* Views */,
+				97F6E0A324744B890078D0F4 /* HostingController.swift */,
+				97F6E0A724744B890078D0F4 /* NotificationController.swift */,
+				97F6E0A524744B890078D0F4 /* ExtensionDelegate.swift */,
+				97F6E0AB24744B890078D0F4 /* ComplicationController.swift */,
+				97F6E0AD24744B8A0078D0F4 /* Assets.xcassets */,
+				97F6E0B224744B8A0078D0F4 /* Info.plist */,
+				97F6E0B324744B8A0078D0F4 /* PushNotificationPayload.apns */,
+				97F6E0AF24744B8A0078D0F4 /* Preview Content */,
+			);
+			path = "2020-quiz-starter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		97F6E0AF24744B8A0078D0F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E0B024744B8A0078D0F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97F6E0C124744C5D0078D0F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E0C224744C7C0078D0F4 /* FlashCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		97F6E0C724744F5F0078D0F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E0CC24744F5F0078D0F4 /* Containers */,
+				97F6E0A924744B890078D0F4 /* NotificationView.swift */,
+				97F6E0C824744F5F0078D0F4 /* TopicList.swift */,
+				97F6E0D7247452920078D0F4 /* FlashCard.swift */,
+				97F6E0CA24744F5F0078D0F4 /* CardList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97F6E0CC24744F5F0078D0F4 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				97F6E0CD24744F5F0078D0F4 /* FlipView.swift */,
+				97F6E0CE24744F5F0078D0F4 /* CardStack.swift */,
+				97F6E0CF24744F5F0078D0F4 /* CardSide.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97F6E08824744B860078D0F4 /* 2020-quiz-starter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F6E0BE24744B8A0078D0F4 /* Build configuration list for PBXNativeTarget "2020-quiz-starter" */;
+			buildPhases = (
+				97F6E08724744B860078D0F4 /* Resources */,
+				97F6E0BD24744B8A0078D0F4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97F6E09024744B870078D0F4 /* PBXTargetDependency */,
+			);
+			name = "2020-quiz-starter";
+			productName = "2020-quiz-starter";
+			productReference = 97F6E08924744B860078D0F4 /* 2020-quiz-starter.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		97F6E08C24744B870078D0F4 /* 2020-quiz-starter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F6E0BA24744B8A0078D0F4 /* Build configuration list for PBXNativeTarget "2020-quiz-starter WatchKit App" */;
+			buildPhases = (
+				97F6E08B24744B870078D0F4 /* Resources */,
+				97F6E0B924744B8A0078D0F4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97F6E09F24744B890078D0F4 /* PBXTargetDependency */,
+			);
+			name = "2020-quiz-starter WatchKit App";
+			productName = "2020-quiz-starter WatchKit App";
+			productReference = 97F6E08D24744B870078D0F4 /* 2020-quiz-starter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		97F6E09B24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F6E0B624744B8A0078D0F4 /* Build configuration list for PBXNativeTarget "2020-quiz-starter WatchKit Extension" */;
+			buildPhases = (
+				97F6E09824744B890078D0F4 /* Sources */,
+				97F6E09924744B890078D0F4 /* Frameworks */,
+				97F6E09A24744B890078D0F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2020-quiz-starter WatchKit Extension";
+			productName = "2020-quiz-starter WatchKit Extension";
+			productReference = 97F6E09C24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97F6E08324744B860078D0F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "T. Andrew Binkowski";
+				TargetAttributes = {
+					97F6E08824744B860078D0F4 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					97F6E08C24744B870078D0F4 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					97F6E09B24744B890078D0F4 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 97F6E08624744B860078D0F4 /* Build configuration list for PBXProject "2020-quiz-starter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97F6E08224744B860078D0F4;
+			productRefGroup = 97F6E08A24744B860078D0F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97F6E08824744B860078D0F4 /* 2020-quiz-starter */,
+				97F6E08C24744B870078D0F4 /* 2020-quiz-starter WatchKit App */,
+				97F6E09B24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97F6E08724744B860078D0F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F6E08B24744B870078D0F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F6E09624744B890078D0F4 /* Assets.xcassets in Resources */,
+				97F6E09424744B870078D0F4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F6E09A24744B890078D0F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F6E0B124744B8A0078D0F4 /* Preview Assets.xcassets in Resources */,
+				97F6E0AE24744B8A0078D0F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97F6E09824744B890078D0F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F6E0A424744B890078D0F4 /* HostingController.swift in Sources */,
+				97F6E0D224744F5F0078D0F4 /* CardList.swift in Sources */,
+				97F6E0D424744F5F0078D0F4 /* FlipView.swift in Sources */,
+				97F6E0C324744C7C0078D0F4 /* FlashCardModel.swift in Sources */,
+				97F6E0D524744F5F0078D0F4 /* CardStack.swift in Sources */,
+				97F6E0A824744B890078D0F4 /* NotificationController.swift in Sources */,
+				97F6E0D024744F5F0078D0F4 /* TopicList.swift in Sources */,
+				97F6E0A624744B890078D0F4 /* ExtensionDelegate.swift in Sources */,
+				97F6E0AA24744B890078D0F4 /* NotificationView.swift in Sources */,
+				97F6E0AC24744B890078D0F4 /* ComplicationController.swift in Sources */,
+				97F6E0D8247452920078D0F4 /* FlashCard.swift in Sources */,
+				97F6E0D624744F5F0078D0F4 /* CardSide.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97F6E09024744B870078D0F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97F6E08C24744B870078D0F4 /* 2020-quiz-starter WatchKit App */;
+			targetProxy = 97F6E08F24744B870078D0F4 /* PBXContainerItemProxy */;
+		};
+		97F6E09F24744B890078D0F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97F6E09B24744B890078D0F4 /* 2020-quiz-starter WatchKit Extension */;
+			targetProxy = 97F6E09E24744B890078D0F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97F6E09224744B870078D0F4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97F6E09324744B870078D0F4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97F6E0B424744B8A0078D0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97F6E0B524744B8A0078D0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97F6E0B724744B8A0078D0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"2020-quiz-starter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 723KYE3F9E;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "2020-quiz-starter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.uchicago.-020-quiz-starter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		97F6E0B824744B8A0078D0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"2020-quiz-starter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 723KYE3F9E;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "2020-quiz-starter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.uchicago.-020-quiz-starter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		97F6E0BB24744B8A0078D0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 723KYE3F9E;
+				IBSC_MODULE = _020_quiz_starter_WatchKit_Extension;
+				INFOPLIST_FILE = "2020-quiz-starter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.uchicago.-020-quiz-starter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		97F6E0BC24744B8A0078D0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 723KYE3F9E;
+				IBSC_MODULE = _020_quiz_starter_WatchKit_Extension;
+				INFOPLIST_FILE = "2020-quiz-starter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.uchicago.-020-quiz-starter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		97F6E0BF24744B8A0078D0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 723KYE3F9E;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.uchicago.-020-quiz-starter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97F6E0C024744B8A0078D0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 723KYE3F9E;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.uchicago.-020-quiz-starter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97F6E08624744B860078D0F4 /* Build configuration list for PBXProject "2020-quiz-starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F6E0B424744B8A0078D0F4 /* Debug */,
+				97F6E0B524744B8A0078D0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F6E0B624744B8A0078D0F4 /* Build configuration list for PBXNativeTarget "2020-quiz-starter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F6E0B724744B8A0078D0F4 /* Debug */,
+				97F6E0B824744B8A0078D0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F6E0BA24744B8A0078D0F4 /* Build configuration list for PBXNativeTarget "2020-quiz-starter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F6E0BB24744B8A0078D0F4 /* Debug */,
+				97F6E0BC24744B8A0078D0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F6E0BE24744B8A0078D0F4 /* Build configuration list for PBXNativeTarget "2020-quiz-starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F6E0BF24744B8A0078D0F4 /* Debug */,
+				97F6E0C024744B8A0078D0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97F6E08324744B860078D0F4 /* Project object */;
+}
