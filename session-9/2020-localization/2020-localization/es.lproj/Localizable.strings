@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  2020-localization
+
+  Created by T. Andrew Binkowski on 6/2/20.
+  Copyright © 2020 T. Andrew Binkowski. All rights reserved.
+*/
+
+GREETING="Hola";
